@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <>
+    <main className="w-full h-[40rem] mb-18 mt-14 border-2 border-amber-400">
       <section className="flex flex-col justify-center items-center w-full h-full m-auto">
         <div>
           <h1>Breathe Better with LEVOIT</h1>
@@ -16,7 +16,7 @@ export default function Hero() {
 
         <div className="flex flex-col items-center justify-center m-auto">
           <AspectRatio ratio={16 / 9}>
-            <Image src="..." alt="Image" className="rounded-md object-cover" />
+            <Image src="" alt="Image" className="rounded-md object-cover" />
           </AspectRatio>
           <p className="text-[#077D61]">In Stock</p>
         </div>
@@ -32,6 +32,6 @@ export default function Hero() {
           </ul>
         </div>
       </section>
-    </>
+    </main>
   );
 }
