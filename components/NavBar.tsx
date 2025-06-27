@@ -6,7 +6,9 @@ export default function NavBar() {
   return (
     <main className="relative top-0">
       <section className="flex justify-evenly items-center gap-12 h-18 bg-[#222F3E]">
-        <h1 className="font-bold text-2xl text-white">CleanAir.com</h1>
+        <h1 className="font-bold text-2xl text-white">
+          Clean<span className="text-[#077D61]">Air</span>.com
+        </h1>
         <div className="flex gap-6 font-medium">
           <a
             href="https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_1?crid=3FFYUKWK2X00Y&dib=eyJ2IjoiMSJ9.h1ZxlhUZUvTKQ3b25RgTx8cqBjmL_u7sQzQMP2MkhM824C0WkymudLUcq6P7_el7J73GJlfw3M74zjUb8G0AEd_7ZrZhfzJ2rcKkeHrtjpitumCgohddlZuFsEEEYr8BSjHJw9UIz-fqtizTTYXqXRhiTszkzz9u8oefj0fAyHvhZGiTpKpSukXlaEQTITzHdI71bfKbZzDrnDumIfNu9GCaWSaD72hFDIQEztyGSFI.A8qD29VKmj04v18695WrWMYz3lD_errEsS5wVy8vwwI&dib_tag=se&keywords=mini%2Bair%2Bpurifier&qid=1750736560&rnid=8308919011&sprefix=mini%2Bair%2Bpurifier%2Caps%2C267&sr=8-1&th=1"
