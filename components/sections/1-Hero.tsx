@@ -20,7 +20,7 @@ export default function Hero() {
 
           <div className="hidden lg:flex flex-col justify-center items-center gap-8 mt-6">
             <div>
-              <Button className="w-2xs py-7 bg-[#FFA41C] hover:bg-[#f29b1a] text-[#0F1111] text-xl font-bold rounded-full">
+              <Button className="hover:cursor-pointer w-2xs py-7 bg-[#FFA41C] hover:bg-[#f29b1a] text-[#0F1111] text-xl font-bold rounded-full">
                 Check Price on Amazon
               </Button>
             </div>
@@ -40,7 +40,7 @@ export default function Hero() {
         </div>
 
         <div>
-          <Button className="lg:hidden w-2xs py-7 bg-[#FFA41C] hover:bg-[#f29b1a] text-[#0F1111] text-xl font-bold rounded-full">
+          <Button className="lg:hidden hover:cursor-pointer w-2xs py-7 bg-[#FFA41C] hover:bg-[#f29b1a] text-[#0F1111] text-xl font-bold rounded-full">
             Check Price on Amazon
           </Button>
         </div>
