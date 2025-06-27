@@ -7,14 +7,16 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <main className="w-full py-14 bg-[#F2F6FF] text-[#0F1111]">
-      <section className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-0 p-2 lg:px-40 w-full h-full m-auto">
+      <section className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-0 p-2 lg:px-5 w-full h-full m-auto">
         <div className="flex flex-col gap-2 lg:gap-4 lg:w-3/6 lg:m-auto md:gap-4 text-center">
-          <h1 className="text-2xl md:text-5xl lg:text-6xl font-extrabold">
-            Breathe Better with LEVOIT
-          </h1>
-          <p className="md:text-3xl">
-            Transform your bedroom into a clean-air sanctuary.
-          </p>
+          <div className="flex flex-col gap-4 lg:max-w-5/6 m-auto">
+            <h1 className="text-2xl md:text-5xl lg:text-6xl font-extrabold">
+              Breathe Better with LEVOIT
+            </h1>
+            <p className="md:text-3xl">
+              Transform your bedroom into a clean-air sanctuary.
+            </p>
+          </div>
 
           <div className="hidden lg:flex flex-col justify-center items-center gap-8 mt-6">
             <div>
@@ -32,7 +34,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center gap-2 px-10 m-auto">
+        <div className="flex flex-col justify-center gap-2 px-10 m-auto lg:pr-24">
           <CarouselHero />
           <p className="text-[#077D61] px-2">In Stock</p>
         </div>
