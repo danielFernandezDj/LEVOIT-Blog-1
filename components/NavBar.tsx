@@ -7,7 +7,7 @@ export default function NavBar() {
     <main className="relative top-0">
       <section className="flex justify-evenly items-center gap-12 h-18 bg-[#222F3E]">
         <h1 className="font-bold text-2xl text-white">
-          Clean<span className="text-[#077D61]">Air</span>.com
+          CleanAir.com
         </h1>
         <div className="flex gap-6 font-medium">
           <a
