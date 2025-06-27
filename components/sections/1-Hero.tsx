@@ -1,34 +1,52 @@
 "use client";
 
-import Image from "next/image";
+import CarouselHero from "../layout/CarouselHero";
 
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <main className="w-full h-[40rem] mb-18 mt-14 border-2 border-amber-400">
-      <section className="flex flex-col justify-center items-center w-full h-full m-auto">
-        <div>
-          <h1>Breathe Better with LEVOIT</h1>
-          <p>Transform your bedroom into a clean-air sanctuary.</p>
+    <main className="w-full py-14 bg-[#F2F6FF] text-[#0F1111]">
+      <section className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-0 p-2 lg:px-40 w-full h-full m-auto">
+        <div className="flex flex-col gap-2 lg:gap-4 lg:w-3/6 lg:m-auto md:gap-4 text-center">
+          <h1 className="text-2xl md:text-5xl lg:text-6xl font-extrabold">
+            Breathe Better with LEVOIT
+          </h1>
+          <p className="md:text-3xl">
+            Transform your bedroom into a clean-air sanctuary.
+          </p>
+
+          <div className="hidden lg:flex flex-col justify-center items-center gap-8 mt-6">
+            <div>
+              <Button className="w-2xs py-7 bg-[#FFA41C] hover:bg-[#f29b1a] text-[#0F1111] text-xl font-bold rounded-full">
+                Check Price on Amazon
+              </Button>
+            </div>
+
+            <div>
+              <ul className="flex gap-8 -mt-2">
+                <li>• Free Return</li>
+                <li>• Free Delivery</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center m-auto">
-          <AspectRatio ratio={16 / 9}>
-            <Image src="" alt="Image" className="rounded-md object-cover" />
-          </AspectRatio>
-          <p className="text-[#077D61]">In Stock</p>
+        <div className="flex flex-col justify-center gap-2 px-10 m-auto">
+          <CarouselHero />
+          <p className="text-[#077D61] px-2">In Stock</p>
         </div>
 
         <div>
-          <Button variant="outline">Button</Button>
+          <Button className="lg:hidden w-2xs py-7 bg-[#FFA41C] hover:bg-[#f29b1a] text-[#0F1111] text-xl font-bold rounded-full">
+            Check Price on Amazon
+          </Button>
         </div>
 
         <div>
-          <ul className="...">
-            <li>Free Return</li>
-            <li>Free Delivery</li>
+          <ul className="lg:hidden flex gap-8 -mt-2">
+            <li>• Free Return</li>
+            <li>• Free Delivery</li>
           </ul>
         </div>
       </section>
