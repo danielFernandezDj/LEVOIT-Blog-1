@@ -3,26 +3,29 @@ export default function BlogData() {
     {
       id: 0,
       image: "",
-      title: "",
-      subTitle: "",
-      hashtags: "",
+      title: "Blog 1",
+      subTitle: "This is the subtitle for Blog-1 .", 
+      hashtags: "#Air Quality • Jun 2025",
       link: "",
     },
     {
       id: 1,
       image: "",
-      title: "",
-      subTitle: "",
-      hashtags: "",
+      title: "Blog 2",
+      subTitle: "This is the subtitle for Blog-2",
+      hashtags: "#Air Quality • Jun 2025",
       link: "",
     },
     {
       id: 2,
       image: "",
-      title: "",
-      subTitle: "",
-      hashtags: "",
+      title: "Blog 3",
+      subTitle: "This is the subtitle for Blog-3",
+      hashtags: "#Air Quality • Jun 2025",
       link: "",
     },
   ];
 }
+
+//!  I have to fix the 'subtitle' space because it's taking the 'Image' space.
+//?  - probably I need to set a 'max-w' to limit it spacing.
