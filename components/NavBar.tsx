@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 export default function NavBar() {
   return (
     <main className="relative top-0">
-      <section className="flex justify-evenly items-center gap-12 h-18 bg-[#222F3E]">
+      <section className="flex justify-evenly lg:justify-around items-center gap-12 h-18 bg-[#222F3E]">
         <h1 className="font-bold text-2xl text-white">
           CleanAir.com
         </h1>
