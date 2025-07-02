@@ -5,39 +5,36 @@ import { Button } from "../ui/button";
 export default function LEVOITvs() {
   return (
     <>
-      <section className="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-0 p-2 lg:px-5 w-full h-full m-auto">
+      <section className="flex flex-col justify-center items-center gap-10 p-2 py-16 w-full h-full m-auto bg-[#f3f4f6]">
         <h2 className="font-bold text-2xl">LEVOIT vs. Other Brands</h2>
         <table className="">
-          <caption className="caption-top">
-            Table 3.1: Professional wrestlers and their signature moves.
-          </caption>
-          <thead>
+          <thead className="border-2 bg-white">
             <tr>
-              <th>Feature</th>
-              <th>LEVOIT</th>
-              <th>Others</th>
+              <th className="py-4 px-4">Feature</th>
+              <th className="py-4 px-4 text-[#F55700]">LEVOIT</th>
+              <th className="py-4 px-4">Others</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Filtration</td>
-              <td>HEPA H13</td>
-              <td>HEPA H11 or lower</td>
+            <tr className="border-2">
+              <td className="py-4 px-4">Filtration</td>
+              <td className="py-4 px-4 text-[#F55700]">HEPA H13</td>
+              <td className="py-4 px-4">HEPA H11 or lower</td>
             </tr>
-            <tr>
-              <td>Noise Level</td>
-              <td>Very Quite</td>
-              <td>Moderate</td>
+            <tr className="border-2 bg-white">
+              <td className="py-4 px-4">Noise Level</td>
+              <td className="py-4 px-4 text-[#F55700]">Very Quite</td>
+              <td className="py-4 px-4">Moderate</td>
             </tr>
-            <tr>
-              <td>Room Coverage</td>
-              <td>Up to 1095 ft²</td>
-              <td>Up to 600 ft²</td>
+            <tr className="border-2">
+              <td className="py-4 px-4">Room Coverage</td>
+              <td className="py-4 px-4 text-[#F55700]">Up to 1095 ft²</td>
+              <td className="py-4 px-4">Up to 600 ft²</td>
             </tr>
-            <tr>
-              <td>Price</td>
-              <td>Affordable</td>
-              <td>Varies</td>
+            <tr className="border-2 bg-white">
+              <td className="py-4 px-4">Price</td>
+              <td className="py-4 px-4 text-[#F55700]">Affordable</td>
+              <td className="py-4 px-4">Varies</td>
             </tr>
           </tbody>
         </table>
