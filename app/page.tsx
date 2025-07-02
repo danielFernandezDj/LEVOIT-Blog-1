@@ -3,6 +3,7 @@ import Head from "next/head";
 import Hero from "@/components/sections/1-Hero";
 import WhyChooseLevoit from "@/components/sections/2-Why-Choose-LEVOIT";
 import BlogList from "@/components/sections/3-Blog-List";
+import LEVOITvs from "@/components/sections/4-LEVOIT-vs.-Other-Brands";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
       <Hero />
       <WhyChooseLevoit />
       <BlogList />
+      <LEVOITvs />
+      {/* < /> */}
     </div>
   );
 }

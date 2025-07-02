@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import BlogData from "@/Blogs/Blog-Data";
 
 // import Image from "next/image";
@@ -16,9 +18,6 @@ interface BlogItem {
 
 export default function BlogList() {
   const blogData: BlogItem[] = BlogData();
-
-  //   ? I have to make it responsive for other devices!
-  //   ? Change the button-bg color hover.
 
   return (
     <main className="bg-[#222F3E]">
@@ -54,6 +53,12 @@ export default function BlogList() {
             <div className="bg-gray-500/50 w-4/5 pb-0.5 my-4 self-start md:self-center "></div>
           </div>
         ))}
+        <Link
+          href=""
+          className="text-2xl py-4 text-white font-bold tracking-wide hover:tracking-widest transition-all duration-300 ease-in-out"
+        >
+          See more <span className="text-[#F55700]">{">"}</span>{" "}
+        </Link>
       </section>
       ;
     </main>
