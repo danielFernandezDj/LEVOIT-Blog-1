@@ -1,6 +1,7 @@
 "use client";
 
 import ReviewsData from "@/lib/Reviews-Data";
+import VideoData from "@/lib/VideoData";
 
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Button } from "../ui/button";
@@ -23,11 +24,19 @@ interface ReviewsItems {
   lastMessage: string;
 }
 
+interface VideoItems {
+  id: number;
+  stars: string;
+  time: string;
+  link: string;
+}
+
 export default function WhatPeople() {
   const reviewData: ReviewsItems[] = ReviewsData();
+  const videoData: VideoItems[] = VideoData();
 
   return (
-    <main className="flex flex-col justify-center items-center gap-10 p-2 py-16 w-full h-full m-auto text-[#5E5E5E]">
+    <main className="flex flex-col justify-center items-center gap-10 p-2 py-16 lg:w-4/6 w-full h-full m-auto text-[#5E5E5E]">
       <h1 className="text-2xl font-bold text-[#0F1111]">
         What People Are Saying
       </h1>
@@ -42,7 +51,7 @@ export default function WhatPeople() {
         </p>
 
         <div className="flex flex-col gap-2 w-full">
-          <div className="flex gap-4 text-sm justify-around">
+          <div className="flex gap-4 lg:gap-8 text-sm justify-around lg:justify-center">
             <p>851 customers mention &quot;Air quality&quot;</p>
             <p className="text-[#077D61]">740 positive</p>
           </div>
@@ -75,53 +84,52 @@ export default function WhatPeople() {
       </section>
 
       {/* Videos list */}
-      <section className="flex flex-col gap-5 mt-10 pl-4 overflow-auto">
-        <h2 className="text-2xl text-start font-bold text-[#0F1111]">
+      <section className="flex flex-col gap-5 mt-10 pl-4 overflow-auto md:w-full">
+        <h2 className="text-2xl text-start md:text-center font-bold text-[#0F1111]">
           Reviews with videos
         </h2>
-        <ScrollArea className="lg:hidden w-96 md:w-full h-auto whitespace-nowrap">
-          <div className="flex gap-4">
-            {/* Video 1 */}
-            <div className="bg-[#364558] flex flex-col justify-end p-2 w-35 h-55 rounded-lg">
-              <span className="text-[#FFA41C]">★★★★</span>
-              <p className="flex gap-2 text-white">
-                {" "}
-                <Play className="w-5 h-auto" /> 0:29
-              </p>
-            </div>
-            {/* Video 2 */}
-            <div className="bg-[#364558] flex flex-col justify-end p-2 w-35 h-55 rounded-lg">
-              <span className="text-[#FFA41C]">★★★★</span>
-              <p className="flex gap-2 text-white">
-                {" "}
-                <Play className="w-5 h-auto" /> 0:27
-              </p>
-            </div>
-            {/* Video 3 */}
-            <div className="bg-[#364558] flex flex-col justify-end p-2 w-35 h-55 rounded-lg">
-              <span className="text-[#FFA41C]">★★★★★</span>
-              <p className="flex gap-2 text-white">
-                {" "}
-                <Play className="w-5 h-auto" /> 0:15
-              </p>
-            </div>
+        <ScrollArea className="w-96 md:w-full h-auto whitespace-nowrap ">
+          <div className="flex gap-4 md:justify-center">
+            {videoData.map((data, index) => (
+              <a
+                key={index}
+                target="_blank"
+                href={data.link}
+                className="bg-[#364558] hover:border-2 border-amber-500 flex flex-col justify-end p-2 w-35 h-55 rounded-lg"
+              >
+                <span className="text-[#FFA41C]">{data.stars}</span>
+                <p className="flex gap-2 text-white">
+                  {" "}
+                  <Play className="w-5 h-auto" /> {data.time}
+                </p>
+              </a>
+            ))}
           </div>
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </section>
 
       {/* Image List */}
-      <section className="flex flex-col gap-5 w-full m-auto">
-        <h2 className="text-2xl text-start font-bold text-[#0F1111]">
+      <section className="flex flex-col gap-5 w-full m-aut">
+        <h2 className="text-2xl text-start md:text-center font-bold text-[#0F1111]">
           Reviews with images
         </h2>
 
-        <div className="flex justify-around">
-          <div className="bg-[#364558] flex flex-col justify-end p-2 w-45 h-60 rounded-lg"></div>
-          <div className="bg-[#364558] flex flex-col justify-end p-2 w-45 h-60 rounded-lg"></div>
+        <div className="flex justify-around md:justify-center md:gap-6">
+          <a
+            href="https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_1?crid=3FFYUKWK2X00Y&dib=eyJ2IjoiMSJ9.h1ZxlhUZUvTKQ3b25RgTx8cqBjmL_u7sQzQMP2MkhM824C0WkymudLUcq6P7_el7J73GJlfw3M74zjUb8G0AEd_7ZrZhfzJ2rcKkeHrtjpitumCgohddlZuFsEEEYr8BSjHJw9UIz-fqtizTTYXqXRhiTszkzz9u8oefj0fAyHvhZGiTpKpSukXlaEQTITzHdI71bfKbZzDrnDumIfNu9GCaWSaD72hFDIQEztyGSFI.A8qD29VKmj04v18695WrWMYz3lD_errEsS5wVy8vwwI&dib_tag=se&keywords=mini%2Bair%2Bpurifier&qid=1750736560&rnid=8308919011&sprefix=mini%2Bair%2Bpurifier%2Caps%2C267&sr=8-1&th=1"
+            target="_blank"
+            className="bg-[#364558] hover:border-2 border-amber-500 flex flex-col justify-end p-2 w-45 h-60 rounded-lg"
+          ></a>
+          <a
+            href="https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_1?crid=3FFYUKWK2X00Y&dib=eyJ2IjoiMSJ9.h1ZxlhUZUvTKQ3b25RgTx8cqBjmL_u7sQzQMP2MkhM824C0WkymudLUcq6P7_el7J73GJlfw3M74zjUb8G0AEd_7ZrZhfzJ2rcKkeHrtjpitumCgohddlZuFsEEEYr8BSjHJw9UIz-fqtizTTYXqXRhiTszkzz9u8oefj0fAyHvhZGiTpKpSukXlaEQTITzHdI71bfKbZzDrnDumIfNu9GCaWSaD72hFDIQEztyGSFI.A8qD29VKmj04v18695WrWMYz3lD_errEsS5wVy8vwwI&dib_tag=se&keywords=mini%2Bair%2Bpurifier&qid=1750736560&rnid=8308919011&sprefix=mini%2Bair%2Bpurifier%2Caps%2C267&sr=8-1&th=1"
+            target="_blank"
+            className="bg-[#364558] hover:border-2 border-amber-500 flex flex-col justify-end p-2 w-45 h-60 rounded-lg"
+          ></a>
         </div>
       </section>
 
+      {/* CTA-btn */}
       <section className="flex flex-col justify-center items-center gap-8 mt-6">
         <div>
           <Button className="hover:cursor-pointer w-2xs py-7 bg-[#FFA41C] hover:bg-[#f29b1a] text-[#0F1111] text-xl font-bold rounded-full">
@@ -166,7 +174,10 @@ export default function WhatPeople() {
               </h3>
               <p>{data.subtext}</p>
               <p className="text-[#0F1111]">{data.textP}... </p>
-              <a href={data.link} className="text-blue-500">
+              <a
+                href={data.link}
+                className="text-blue-500 hover:underline decoration-wavy"
+              >
                 See more
               </a>
             </div>
