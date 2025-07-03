@@ -4,6 +4,7 @@ import Hero from "@/components/sections/1-Hero";
 import WhyChooseLevoit from "@/components/sections/2-Why-Choose-LEVOIT";
 import BlogList from "@/components/sections/3-Blog-List";
 import LEVOITvs from "@/components/sections/4-LEVOIT-vs.-Other-Brands";
+import WhatPeople from "@/components/sections/5-What-People-Are-Saying";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <WhyChooseLevoit />
       <BlogList />
       <LEVOITvs />
+      <WhatPeople />
       {/* < /> */}
     </div>
   );
