@@ -29,3 +29,7 @@ export default function Home() {
     </div>
   );
 }
+
+
+//! Algun componente se esta saliendo de la pantalla y no esta dejando que funcione vien en "mi Samsung", 
+//! tambien se corre hacia un lado .

@@ -45,7 +45,7 @@ export default function WhatPeople() {
         </div>
       </section>
 
-      <section className="flex flex-wrap gap-4">
+      <section className="flex flex-wrap justify-center gap-4 md:gap-4">
         <p className="flex items-center gap-2">
           <Check className="w-6 h-auto text-[#79a55b]" /> Air quality
         </p>
@@ -64,11 +64,11 @@ export default function WhatPeople() {
       </section>
 
       {/* Videos list */}
-      <section className="flex flex-col gap-5 mt-10 pl-4 overflow-auto md:w-full">
+      <section className="flex flex-col gap-5 mt-10  overflow-auto md:w-full">
         <h2 className="text-2xl text-start md:text-center font-bold text-[#0F1111]">
           Reviews with videos
         </h2>
-        <ScrollArea className="w-96 md:w-full h-auto whitespace-nowrap ">
+        <ScrollArea className="w-86 md:w-full h-auto whitespace-nowrap ">
           <div className="flex gap-4 md:justify-center">
             {videoData.map((data, index) => (
               <a
@@ -95,7 +95,7 @@ export default function WhatPeople() {
           Reviews with images
         </h2>
 
-        <div className="flex justify-around md:justify-center md:gap-6">
+        <div className="flex justify-around gap-4 md:justify-center md:gap-6">
           <a
             href="https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_1?crid=3FFYUKWK2X00Y&dib=eyJ2IjoiMSJ9.h1ZxlhUZUvTKQ3b25RgTx8cqBjmL_u7sQzQMP2MkhM824C0WkymudLUcq6P7_el7J73GJlfw3M74zjUb8G0AEd_7ZrZhfzJ2rcKkeHrtjpitumCgohddlZuFsEEEYr8BSjHJw9UIz-fqtizTTYXqXRhiTszkzz9u8oefj0fAyHvhZGiTpKpSukXlaEQTITzHdI71bfKbZzDrnDumIfNu9GCaWSaD72hFDIQEztyGSFI.A8qD29VKmj04v18695WrWMYz3lD_errEsS5wVy8vwwI&dib_tag=se&keywords=mini%2Bair%2Bpurifier&qid=1750736560&rnid=8308919011&sprefix=mini%2Bair%2Bpurifier%2Caps%2C267&sr=8-1&th=1"
             target="_blank"
