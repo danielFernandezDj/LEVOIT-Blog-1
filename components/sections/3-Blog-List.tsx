@@ -2,22 +2,12 @@
 
 import Link from "next/link";
 
-import BlogData from "@/lib/Blog-Data";
+import blogData from "@/lib/Blog-Data";
 
 // import Image from "next/image";
 import { Button } from "../ui/button";
 
-interface BlogItem {
-  id: number;
-  image: string;
-  title: string;
-  subTitle: string;
-  hashtags: string;
-  link: string;
-}
-
 export default function BlogList() {
-  const blogData: BlogItem[] = BlogData();
 
   return (
     <main className="bg-[#222F3E]">
@@ -54,7 +44,7 @@ export default function BlogList() {
           </div>
         ))}
         <Link
-          href=""
+          href="https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_1?crid=3FFYUKWK2X00Y&dib=eyJ2IjoiMSJ9.h1ZxlhUZUvTKQ3b25RgTx8cqBjmL_u7sQzQMP2MkhM824C0WkymudLUcq6P7_el7J73GJlfw3M74zjUb8G0AEd_7ZrZhfzJ2rcKkeHrtjpitumCgohddlZuFsEEEYr8BSjHJw9UIz-fqtizTTYXqXRhiTszkzz9u8oefj0fAyHvhZGiTpKpSukXlaEQTITzHdI71bfKbZzDrnDumIfNu9GCaWSaD72hFDIQEztyGSFI.A8qD29VKmj04v18695WrWMYz3lD_errEsS5wVy8vwwI&dib_tag=se&keywords=mini%2Bair%2Bpurifier&qid=1750736560&rnid=8308919011&sprefix=mini%2Bair%2Bpurifier%2Caps%2C267&sr=8-1&th=1"
           className="text-2xl py-4 text-white font-bold tracking-wide hover:tracking-widest transition-all duration-300 ease-in-out"
         >
           See more <span className="text-[#F55700]">{">"}</span>{" "}

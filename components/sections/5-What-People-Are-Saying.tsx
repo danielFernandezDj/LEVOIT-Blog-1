@@ -1,7 +1,7 @@
 "use client";
 
-import ReviewsData from "@/lib/Reviews-Data";
-import VideoData from "@/lib/VideoData";
+import reviewData from "@/lib/Reviews-Data";
+import videoData from "@/lib/VideoData";
 
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Button } from "../ui/button";
@@ -12,28 +12,8 @@ import { CircleUserRound } from "lucide-react";
 
 // import Image from "next/image";
 
-interface ReviewsItems {
-  id: number;
-  logoInit: string;
-  stars: string;
-  starsText: string;
-  header: string;
-  subtext: string;
-  textP: string;
-  link: string;
-  lastMessage: string;
-}
-
-interface VideoItems {
-  id: number;
-  stars: string;
-  time: string;
-  link: string;
-}
-
 export default function WhatPeople() {
-  const reviewData: ReviewsItems[] = ReviewsData();
-  const videoData: VideoItems[] = VideoData();
+
 
   return (
     <main className="flex flex-col justify-center items-center gap-10 p-2 py-16 lg:w-4/6 w-full h-full m-auto text-[#5E5E5E]">
