@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import BlogData from "@/Blogs/Blog-Data";
+import BlogData from "@/lib/Blog-Data";
 
 // import Image from "next/image";
 import { Button } from "../ui/button";
