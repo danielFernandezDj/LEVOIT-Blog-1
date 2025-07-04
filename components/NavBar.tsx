@@ -1,28 +1,30 @@
 "use client";
 
+import Link from "next/link";
+
 import { Star } from "lucide-react";
 
 export default function NavBar() {
   return (
     <main className="relative top-0">
       <section className="flex justify-evenly lg:justify-around items-center gap-12 h-18 bg-[#222F3E]">
-        <h1 className="font-bold text-2xl text-white">
+        <Link href={"/"} className="font-bold text-2xl text-white">
           CleanAir.com
-        </h1>
+        </Link>
         <div className="flex gap-8 font-medium">
-          <a
+          <Link
             href="https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_1?crid=3FFYUKWK2X00Y&dib=eyJ2IjoiMSJ9.h1ZxlhUZUvTKQ3b25RgTx8cqBjmL_u7sQzQMP2MkhM824C0WkymudLUcq6P7_el7J73GJlfw3M74zjUb8G0AEd_7ZrZhfzJ2rcKkeHrtjpitumCgohddlZuFsEEEYr8BSjHJw9UIz-fqtizTTYXqXRhiTszkzz9u8oefj0fAyHvhZGiTpKpSukXlaEQTITzHdI71bfKbZzDrnDumIfNu9GCaWSaD72hFDIQEztyGSFI.A8qD29VKmj04v18695WrWMYz3lD_errEsS5wVy8vwwI&dib_tag=se&keywords=mini%2Bair%2Bpurifier&qid=1750736560&rnid=8308919011&sprefix=mini%2Bair%2Bpurifier%2Caps%2C267&sr=8-1&th=1"
             target="_blank"
             className="text-[#FFA41C] hover:underline decoration-wavy"
           >
             Buy Now
-          </a>
-          <a
-            href="https://ui.shadcn.com/docs/components/dropdown-menu"
+          </Link>
+          <Link
+            href="/blog"
             className="text-white hover:underline decoration-wavy"
           >
-            Blog
-          </a>
+            Blogs
+          </Link>
         </div>
       </section>
 

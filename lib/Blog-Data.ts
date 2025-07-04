@@ -1,27 +1,47 @@
 const blogData = [
   {
-    id: 0,
-    image: "",
-    title: "Blog 1",
-    subTitle: "This is the subtitle for Blog-1.",
-    hashtags: "#Air Quality • Jun 2025",
-    link: "",
-  },
-  {
     id: 1,
-    image: "",
-    title: "Blog 2",
-    subTitle: "This is the subtitle for Blog-2",
-    hashtags: "#Air Quality • Jun 2025",
-    link: "",
+    slug: "levoit-allergies-pets-1",
+    title: "Why LEVOIT is Great for Allergies and Pet Owners",
+    summary:
+      "Say goodbye to pet hair and allergens with the right LEVOIT model.",
+    tag: "Home Health",
+    date: "Jul 2025",
   },
   {
     id: 2,
-    image: "",
-    title: "Blog 3",
-    subTitle: "This is the subtitle for Blog-3",
-    hashtags: "#Air Quality • Jun 2025",
-    link: "",
+    slug: "levoit-vs-other-purifiers-2",
+    title: "LEVOIT vs Other Air Purifiers: Honest Comparison",
+    summary: "We break down the differences in filtration, noise, and value.",
+    tag: "Comparison",
+    date: "Jul 2025",
+  },
+  {
+    id: 3,
+    slug: "levoit-allergies-pets-3",
+    title: "Why LEVOIT is Great for Allergies and Pet Owners",
+    summary:
+      "Say goodbye to pet hair and allergens with the right LEVOIT model.",
+    tag: "Home Health",
+    date: "Jul 2025",
+  },
+  {
+    id: 4,
+    slug: "levoit-allergies-pets-4",
+    title: "Why LEVOIT is Great for Allergies and Pet Owners",
+    summary:
+      "Say goodbye to pet hair and allergens with the right LEVOIT model.",
+    tag: "Home Health",
+    date: "Jul 2025",
+  },
+  {
+    id: 5,
+    slug: "levoit-allergies-pets-5",
+    title: "Why LEVOIT is Great for Allergies and Pet Owners",
+    summary:
+      "Say goodbye to pet hair and allergens with the right LEVOIT model.",
+    tag: "Home Health",
+    date: "Jul 2025",
   },
 ];
 
