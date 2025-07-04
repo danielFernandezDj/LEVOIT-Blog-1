@@ -5,6 +5,7 @@ import WhyChooseLevoit from "@/components/sections/2-Why-Choose-LEVOIT";
 import BlogList from "@/components/sections/3-Blog-List";
 import LEVOITvs from "@/components/sections/4-LEVOIT-vs.-Other-Brands";
 import WhatPeople from "@/components/sections/5-What-People-Are-Saying";
+import ReadyForClean from "@/components/sections/6-Ready-for-Clean-Air";
 
 export default function Home() {
   return (
@@ -25,11 +26,8 @@ export default function Home() {
       <BlogList />
       <LEVOITvs />
       <WhatPeople />
+      <ReadyForClean />
       {/* < /> */}
     </div>
   );
 }
-
-
-//! Algun componente se esta saliendo de la pantalla y no esta dejando que funcione vien en "mi Samsung", 
-//! tambien se corre hacia un lado .
