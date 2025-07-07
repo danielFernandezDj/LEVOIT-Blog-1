@@ -1,8 +1,8 @@
 const blogData = [
   {
     id: 1,
-    slug: "levoit-allergies-pets-1",
-    title: "Why LEVOIT is Great for Allergies and Pet Owners",
+    slug: "/blogs/posts/p-1",
+    title: "Why LEVOIT is Great for Allergies and Pet Owners 1",
     summary:
       "Say goodbye to pet hair and allergens with the right LEVOIT model.",
     tag: "Home Health",

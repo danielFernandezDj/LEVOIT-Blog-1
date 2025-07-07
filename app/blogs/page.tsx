@@ -3,53 +3,6 @@ import Link from "next/link";
 
 import blogData from "@/lib/Blog-Data";
 
-// const blogPosts = [
-//   {
-//     id: 1,
-//     slug: "levoit-allergies-pets-1",
-//     title: "Why LEVOIT is Great for Allergies and Pet Owners",
-//     summary:
-//       "Say goodbye to pet hair and allergens with the right LEVOIT model.",
-//     tag: "Home Health",
-//     date: "Jul 2025",
-//   },
-//   {
-//     id: 2,
-//     slug: "levoit-vs-other-purifiers-2",
-//     title: "LEVOIT vs Other Air Purifiers: Honest Comparison",
-//     summary: "We break down the differences in filtration, noise, and value.",
-//     tag: "Comparison",
-//     date: "Jul 2025",
-//   },
-//   {
-//     id: 3,
-//     slug: "levoit-allergies-pets-3",
-//     title: "Why LEVOIT is Great for Allergies and Pet Owners",
-//     summary:
-//       "Say goodbye to pet hair and allergens with the right LEVOIT model.",
-//     tag: "Home Health",
-//     date: "Jul 2025",
-//   },
-//   {
-//     id: 4,
-//     slug: "levoit-allergies-pets-4",
-//     title: "Why LEVOIT is Great for Allergies and Pet Owners",
-//     summary:
-//       "Say goodbye to pet hair and allergens with the right LEVOIT model.",
-//     tag: "Home Health",
-//     date: "Jul 2025",
-//   },
-//   {
-//     id: 5,
-//     slug: "levoit-allergies-pets-5",
-//     title: "Why LEVOIT is Great for Allergies and Pet Owners",
-//     summary:
-//       "Say goodbye to pet hair and allergens with the right LEVOIT model.",
-//     tag: "Home Health",
-//     date: "Jul 2025",
-//   },
-// ];
-
 export default function BlogIndex() {
   return (
     <div className="bg-slate-900 text-white min-h-screen font-sans">
@@ -81,7 +34,7 @@ export default function BlogIndex() {
                 #{post.tag} • {post.date}
               </p>
               <Link
-                href={`/blog/${post.slug}`}
+                href={post.slug}
                 className="inline-block mt-3 bg-[#F55700] text-white text-sm font-bold tracking-wider py-2 px-4 rounded-full hover:bg-orange-600 transition"
               >
                 See more &gt;

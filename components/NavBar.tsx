@@ -11,7 +11,7 @@ export default function NavBar() {
         <Link href={"/"} className="font-bold text-2xl text-white">
           CleanAir.com
         </Link>
-        <div className="flex gap-8 font-medium">
+        <div className="flex gap-4 font-medium">
           <Link
             href="https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_1?crid=3FFYUKWK2X00Y&dib=eyJ2IjoiMSJ9.h1ZxlhUZUvTKQ3b25RgTx8cqBjmL_u7sQzQMP2MkhM824C0WkymudLUcq6P7_el7J73GJlfw3M74zjUb8G0AEd_7ZrZhfzJ2rcKkeHrtjpitumCgohddlZuFsEEEYr8BSjHJw9UIz-fqtizTTYXqXRhiTszkzz9u8oefj0fAyHvhZGiTpKpSukXlaEQTITzHdI71bfKbZzDrnDumIfNu9GCaWSaD72hFDIQEztyGSFI.A8qD29VKmj04v18695WrWMYz3lD_errEsS5wVy8vwwI&dib_tag=se&keywords=mini%2Bair%2Bpurifier&qid=1750736560&rnid=8308919011&sprefix=mini%2Bair%2Bpurifier%2Caps%2C267&sr=8-1&th=1"
             target="_blank"
@@ -20,7 +20,7 @@ export default function NavBar() {
             Buy Now
           </Link>
           <Link
-            href="/blog"
+            href="/blogs"
             className="text-white hover:underline decoration-wavy"
           >
             Blogs
