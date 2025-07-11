@@ -10,7 +10,7 @@ const blogData = [
   },
   {
     id: 2,
-    slug: "levoit-vs-other-purifiers-2",
+    slug: "/blogs/posts/p-2",
     title: "LEVOIT vs Other Air Purifiers: Honest Comparison",
     summary: "We break down the differences in filtration, noise, and value.",
     tag: "Comparison",
