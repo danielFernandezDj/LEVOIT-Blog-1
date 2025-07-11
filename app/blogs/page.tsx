@@ -5,7 +5,7 @@ import blogData from "@/lib/Blog-Data";
 
 export default function BlogIndex() {
   return (
-    <div className="bg-slate-900 text-white min-h-screen font-sans">
+    <div className="bg-slate-100 text-[#222F3E] min-h-screen font-sans">
       <Head>
         <title>Our Blog – CleanAir.com</title>
         <meta
@@ -29,8 +29,8 @@ export default function BlogIndex() {
           >
             <div>
               <h2 className="text-xl font-semibold">{post.title}</h2>
-              <p className="text-sm text-gray-300 mt-1">{post.summary}</p>
-              <p className="text-xs mt-2 text-gray-400">
+              <p className="text-sm text-gray-800 mt-1">{post.summary}</p>
+              <p className="text-xs mt-2 text-gray-800">
                 #{post.tag} • {post.date}
               </p>
               <Link
