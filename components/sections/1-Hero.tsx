@@ -1,6 +1,7 @@
 "use client";
 
 import CarouselHero from "../layout/CarouselHero";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 
@@ -34,9 +35,16 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center gap-2 px-10 m-auto lg:pr-24">
-          <CarouselHero />
-          <p className="text-[#077D61] px-2">In Stock</p>
+        <div className="flex flex-col justify-center gap-2 m-auto bg-white rounded-2xl">
+          {/* <CarouselHero /> */}
+          <Image
+            src="https://m.media-amazon.com/images/I/71tpOZEW0eL._AC_SL1500_.jpg"
+            alt="Image?"
+            width={500}
+            height={500}
+            className="w-56 md:w-60 h-full m-auto rounded-2xl px-10 pt-5"
+          />
+          <p className="text-[#077D61] text-sm md:text-xl px-2">In Stock</p>
         </div>
 
         <div>
