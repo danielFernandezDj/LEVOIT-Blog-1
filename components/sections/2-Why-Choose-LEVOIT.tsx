@@ -1,6 +1,6 @@
 "use client";
 
-// import Image from "next/image";
+import Image from "next/image";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 export default function WhyChooseLevoit() {
@@ -19,57 +19,63 @@ export default function WhyChooseLevoit() {
 
       <section className="flex justify-around w-full lg:w-3/6 gap-8 overflow-auto">
         <div className="hidden lg:flex justify-center w-full gap-8">
-          <div className="w-50 h-60 rounded-2xl bg-amber-500">
-            {/* <Image
-              src=""
+          <div className="w-60 h-60 rounded-2xl bg-amber-500">
+            <Image
+              src="https://m.media-amazon.com/images/I/71m4zakrmmL._AC_SX679_.jpg"
               alt="Image"
-              fill
+              width={300}
+              height={240}
               className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
-              /> */}
+            />
           </div>
-          <div className="w-50 h-60 rounded-2xl bg-amber-500">
-            {/* <Image
-              src=""
+          <div className="w-60 h-60 rounded-2xl bg-amber-500">
+            <Image
+              src="https://m.media-amazon.com/images/I/71vIJdf1mQL._AC_SL1500_.jpg"
               alt="Image"
-              fill
+              width={300}
+              height={240}
               className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
-              /> */}
+            />
           </div>
-          <div className="w-50 h-60 rounded-2xl bg-amber-500">
-            {/* <Image
-              src=""
+          <div className="w-60 h-60 rounded-2xl bg-amber-500">
+            <Image
+              src="https://m.media-amazon.com/images/I/71CQ17XiTqL._AC_SX679_.jpg"
               alt="Image"
-              fill
+              width={300}
+              height={240}
               className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
-              /> */}
+            />
           </div>
         </div>
 
         <ScrollArea className="lg:hidden w-96 md:w-full h-auto rounded-2xl whitespace-nowrap">
           <div className="flex w-max space-x-4 p-4 m-auto">
-            <div className="w-50 h-60 rounded-2xl bg-amber-500">
-              {/* <Image
-              src=""
-              alt="Image"
-              fill
-              className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
-              /> */}
+            <div className="w-60 h-60 rounded-2xl bg-amber-500">
+              <Image
+                src="https://m.media-amazon.com/images/I/71m4zakrmmL._AC_SX679_.jpg"
+                alt="Image"
+                width={300}
+                height={240}
+                className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
+              />
             </div>
-            <div className="w-50 h-60 rounded-2xl bg-amber-500">
-              {/* <Image
-              src=""
-              alt="Image"
-              fill
-              className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
-              /> */}
+            <div className="w-60 h-60 rounded-2xl bg-amber-500">
+              <Image
+                src="https://m.media-amazon.com/images/I/71vIJdf1mQL._AC_SL1500_.jpg"
+                alt="Image"
+                width={300}
+                height={240}
+                className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
+              />
             </div>
-            <div className="w-50 h-60 rounded-2xl bg-amber-500">
-              {/* <Image
-              src=""
-              alt="Image"
-              fill
-              className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
-              /> */}
+            <div className="w-60 h-60 rounded-2xl bg-amber-500">
+              <Image
+                src="https://m.media-amazon.com/images/I/71CQ17XiTqL._AC_SX679_.jpg"
+                alt="Image"
+                width={300}
+                height={240}
+                className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
+              />
             </div>
           </div>
           <ScrollBar orientation="horizontal" />

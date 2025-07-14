@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import blogData from "@/lib/Blog-Data";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function BlogList() {
   return (
@@ -13,25 +13,38 @@ export default function BlogList() {
           <span className="text-[#f29b1a]">-</span>
         </h2>
         <div className="max-w-2xl mx-auto px-4 space-y-10 pb-8">
-          {blogData.slice(0 ,3).map((post) => (
+          {blogData.slice(0, 3).map((post) => (
             <div
               key={post.slug}
               className="flex justify-between items-start gap-4 border-b border-gray-700 pb-6"
             >
               <div>
-                <h2 className="text-xl text-white font-semibold">{post.title}</h2>
+                <h2 className="text-xl text-white font-semibold">
+                  {post.title}
+                </h2>
                 <p className="text-sm text-gray-300 mt-1">{post.summary}</p>
                 <p className="text-xs mt-2 text-gray-400">
                   #{post.tag} • {post.date}
                 </p>
                 <Link
-                  href={`/blog/${post.slug}`}
-                  className="inline-block mt-3 bg-[#f29b1a] text-white text-sm font-bold tracking-wider py-2 px-4 rounded-full hover:bg-orange-600 transition"
+                  href={post.slug}
+                  target="_blank"
+                  className="inline-block mt-3 bg-[#FFA41C] text-white text-sm font-bold tracking-wider py-2 px-4 rounded-full hover:bg-[#f29b1a] transition"
                 >
                   See more &gt;
                 </Link>
               </div>
-              <div className="hidden md:block md:min-w-64 min-h-44 bg-[#f29b1a] rounded-lg" />
+              <div className="hidden md:block md:min-w-64 min-h-44 bg-[#FFA41C] rounded-lg">
+                <a href={post.slug} target="_blank">
+                  <Image
+                    src={post.image}
+                    alt="Image"
+                    width={300}
+                    height={240}
+                    className="h-50 w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
+                  />
+                </a>
+              </div>
             </div>
           ))}
         </div>
