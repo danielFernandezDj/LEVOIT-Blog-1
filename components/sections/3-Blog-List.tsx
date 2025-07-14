@@ -6,11 +6,11 @@ import blogData from "@/lib/Blog-Data";
 
 export default function BlogList() {
   return (
-    <main className="bg-[#222F3E]">
+    <main className="bg-[#364558]">
       <section className="flex flex-col justify-center items-center w-full gap-6 py-16">
         <h2 className="text-3xl text-white font-bold mb-4">
-          <span className="text-[#F55700]">-</span> Our Top ️Blogs{" "}
-          <span className="text-[#F55700]">-</span>
+          <span className="text-[#f29b1a]">-</span> Our Top ️Blogs{" "}
+          <span className="text-[#f29b1a]">-</span>
         </h2>
         <div className="max-w-2xl mx-auto px-4 space-y-10 pb-8">
           {blogData.slice(0 ,3).map((post) => (
@@ -26,12 +26,12 @@ export default function BlogList() {
                 </p>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="inline-block mt-3 bg-[#F55700] text-white text-sm font-bold tracking-wider py-2 px-4 rounded-full hover:bg-orange-600 transition"
+                  className="inline-block mt-3 bg-[#f29b1a] text-white text-sm font-bold tracking-wider py-2 px-4 rounded-full hover:bg-orange-600 transition"
                 >
                   See more &gt;
                 </Link>
               </div>
-              <div className="hidden md:block md:min-w-64 min-h-44 bg-[#F55700] rounded-lg" />
+              <div className="hidden md:block md:min-w-64 min-h-44 bg-[#f29b1a] rounded-lg" />
             </div>
           ))}
         </div>
@@ -39,7 +39,7 @@ export default function BlogList() {
           href="/blog"
           className="text-2xl text-white font-bold tracking-wide hover:tracking-widest transition-all duration-300 ease-in-out"
         >
-          See more <span className="text-[#F55700]">{">"}</span>{" "}
+          See more <span className="text-[#f29b1a]">{">"}</span>{" "}
         </Link>
       </section>
       ;
