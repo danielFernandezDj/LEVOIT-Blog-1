@@ -41,13 +41,15 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col justify-center items-center w-full gap-4">
-          <Image
-            src="/product-Image.png"
-            alt="Image?"
-            width={500}
-            height={500}
-            className="w-56 md:w-60"
-          />
+          <a href={productLink} target="_blank">
+            <Image
+              src="/product-Image.png"
+              alt="Image?"
+              width={500}
+              height={500}
+              className="w-56 md:w-60"
+            />
+          </a>
           <p className="text-[#077D61] text-sm md:text-xl px-8">In Stock</p>
         </div>
 

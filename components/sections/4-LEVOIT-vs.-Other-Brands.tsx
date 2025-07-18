@@ -1,8 +1,9 @@
 "use client";
 
-import { Button } from "../ui/button";
-
 export default function LEVOITvs() {
+  const productLink =
+    "https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_1?crid=3FFYUKWK2X00Y&dib=eyJ2IjoiMSJ9.h1ZxlhUZUvTKQ3b25RgTx8cqBjmL_u7sQzQMP2MkhM824C0WkymudLUcq6P7_el7J73GJlfw3M74zjUb8G0AEd_7ZrZhfzJ2rcKkeHrtjpitumCgohddlZuFsEEEYr8BSjHJw9UIz-fqtizTTYXqXRhiTszkzz9u8oefj0fAyHvhZGiTpKpSukXlaEQTITzHdI71bfKbZzDrnDumIfNu9GCaWSaD72hFDIQEztyGSFI.A8qD29VKmj04v18695WrWMYz3lD_errEsS5wVy8vwwI&dib_tag=se&keywords=mini%2Bair%2Bpurifier&qid=1750736560&rnid=8308919011&sprefix=mini%2Bair%2Bpurifier%2Caps%2C267&sr=8-1&th=1";
+  
   return (
     <>
       <section className="flex flex-col justify-center items-center gap-10 p-2 py-16 w-full h-full m-auto bg-[#f3f4f6]">
@@ -41,9 +42,9 @@ export default function LEVOITvs() {
 
         <div className="flex flex-col justify-center items-center gap-8 mt-6">
           <div>
-            <Button className="hover:cursor-pointer w-2xs py-7 bg-[#FFA41C] hover:bg-[#f29b1a] text-[#0F1111] text-xl font-bold rounded-full">
+            <a href={productLink} target="_blank" className="hover:cursor-pointer w-2xs px-6 py-4 bg-[#FFA41C] hover:bg-[#f29b1a] text-[#0F1111] text-xl font-bold rounded-full">
               Check Price on Amazon
-            </Button>
+            </a>
           </div>
 
           <div>
