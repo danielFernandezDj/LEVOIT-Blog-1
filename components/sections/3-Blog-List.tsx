@@ -4,6 +4,10 @@ import Link from "next/link";
 import blogData from "@/lib/Blog-Data";
 import Image from "next/image";
 
+// ! ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––|
+// ! I need to fix the image path for the blog images  &  the "see more" link. |
+// ! ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––|
+
 export default function BlogList() {
   return (
     <main className="bg-[#364558]">
@@ -49,7 +53,7 @@ export default function BlogList() {
           ))}
         </div>
         <Link
-          href="/blog"
+          href="/blogs"
           className="text-2xl text-white font-bold tracking-wide hover:tracking-widest transition-all duration-300 ease-in-out"
         >
           See more <span className="text-[#f29b1a]">{">"}</span>{" "}

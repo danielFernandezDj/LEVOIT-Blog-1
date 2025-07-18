@@ -4,16 +4,16 @@ import reviewData from "@/lib/Reviews-Data";
 import videoData from "@/lib/VideoData";
 
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { Button } from "../ui/button";
 
 import { Check } from "lucide-react";
 import { Play } from "lucide-react";
 import { CircleUserRound } from "lucide-react";
 
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function WhatPeople() {
-
+  const productLink =
+    "https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_1?crid=3FFYUKWK2X00Y&dib=eyJ2IjoiMSJ9.h1ZxlhUZUvTKQ3b25RgTx8cqBjmL_u7sQzQMP2MkhM824C0WkymudLUcq6P7_el7J73GJlfw3M74zjUb8G0AEd_7ZrZhfzJ2rcKkeHrtjpitumCgohddlZuFsEEEYr8BSjHJw9UIz-fqtizTTYXqXRhiTszkzz9u8oefj0fAyHvhZGiTpKpSukXlaEQTITzHdI71bfKbZzDrnDumIfNu9GCaWSaD72hFDIQEztyGSFI.A8qD29VKmj04v18695WrWMYz3lD_errEsS5wVy8vwwI&dib_tag=se&keywords=mini%2Bair%2Bpurifier&qid=1750736560&rnid=8308919011&sprefix=mini%2Bair%2Bpurifier%2Caps%2C267&sr=8-1&th=1";
 
   return (
     <main className="flex flex-col justify-center items-center gap-10 p-2 py-16 lg:w-4/6 w-full h-full m-auto text-[#5E5E5E]">
@@ -75,10 +75,17 @@ export default function WhatPeople() {
                 key={index}
                 target="_blank"
                 href={data.link}
-                className="bg-[#364558] hover:border-2 border-amber-500 flex flex-col justify-end p-2 w-35 h-55 rounded-lg"
+                className="border-2 border-[#364558] hover:border-2 hover:border-amber-500 flex flex-col justify-end p-2 w-35 h-55 rounded-lg"
               >
+                <Image
+                  src={data.image}
+                  alt=""
+                  width={300}
+                  height={250}
+                  className="h-full rounded-md object-cover"
+                />
                 <span className="text-[#FFA41C]">{data.stars}</span>
-                <p className="flex gap-2 text-white">
+                <p className="flex gap-2 text-[#364558]">
                   {" "}
                   <Play className="w-5 h-auto" /> {data.time}
                 </p>
@@ -94,27 +101,46 @@ export default function WhatPeople() {
         <h2 className="text-2xl text-start md:text-center font-bold text-[#0F1111]">
           Reviews with images
         </h2>
-
         <div className="flex justify-around gap-4 md:justify-center md:gap-6">
           <a
             href="https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_1?crid=3FFYUKWK2X00Y&dib=eyJ2IjoiMSJ9.h1ZxlhUZUvTKQ3b25RgTx8cqBjmL_u7sQzQMP2MkhM824C0WkymudLUcq6P7_el7J73GJlfw3M74zjUb8G0AEd_7ZrZhfzJ2rcKkeHrtjpitumCgohddlZuFsEEEYr8BSjHJw9UIz-fqtizTTYXqXRhiTszkzz9u8oefj0fAyHvhZGiTpKpSukXlaEQTITzHdI71bfKbZzDrnDumIfNu9GCaWSaD72hFDIQEztyGSFI.A8qD29VKmj04v18695WrWMYz3lD_errEsS5wVy8vwwI&dib_tag=se&keywords=mini%2Bair%2Bpurifier&qid=1750736560&rnid=8308919011&sprefix=mini%2Bair%2Bpurifier%2Caps%2C267&sr=8-1&th=1"
             target="_blank"
-            className="bg-[#364558] hover:border-2 border-amber-500 flex flex-col justify-end p-2 w-45 h-60 rounded-lg"
-          ></a>
+            className="bg-[#364558] hover:border-2 border-amber-500 flex flex-col justify-end w-45 h-60 lg:w-72 lg:h-auto rounded-lg"
+          >
+            <Image
+              src="/review-images/r-image-1.jpg"
+              alt=""
+              width={300}
+              height={250}
+              className="h-full rounded-md object-cover"
+            />
+          </a>
           <a
             href="https://www.amazon.com/LEVOIT-Purifiers-Freshener-Core-Mini/dp/B09GTRVJQM/ref=sr_1_1?crid=3FFYUKWK2X00Y&dib=eyJ2IjoiMSJ9.h1ZxlhUZUvTKQ3b25RgTx8cqBjmL_u7sQzQMP2MkhM824C0WkymudLUcq6P7_el7J73GJlfw3M74zjUb8G0AEd_7ZrZhfzJ2rcKkeHrtjpitumCgohddlZuFsEEEYr8BSjHJw9UIz-fqtizTTYXqXRhiTszkzz9u8oefj0fAyHvhZGiTpKpSukXlaEQTITzHdI71bfKbZzDrnDumIfNu9GCaWSaD72hFDIQEztyGSFI.A8qD29VKmj04v18695WrWMYz3lD_errEsS5wVy8vwwI&dib_tag=se&keywords=mini%2Bair%2Bpurifier&qid=1750736560&rnid=8308919011&sprefix=mini%2Bair%2Bpurifier%2Caps%2C267&sr=8-1&th=1"
             target="_blank"
-            className="bg-[#364558] hover:border-2 border-amber-500 flex flex-col justify-end p-2 w-45 h-60 rounded-lg"
-          ></a>
+            className="bg-[#364558] hover:border-2 border-amber-500 flex flex-col justify-end w-45 h-60 lg:w-72 lg:h-auto rounded-lg"
+          >
+            <Image
+              src="/review-images/r-image-2.jpg"
+              alt=""
+              width={300}
+              height={250}
+              className="h-full rounded-md object-cover"
+            />
+          </a>
         </div>
       </section>
 
       {/* CTA-btn */}
       <section className="flex flex-col justify-center items-center gap-8 mt-6">
         <div>
-          <Button className="hover:cursor-pointer w-2xs py-7 bg-[#FFA41C] hover:bg-[#f29b1a] text-[#0F1111] text-xl font-bold rounded-full">
+          <a
+            href={productLink}
+            target="_blank"
+            className="hover:cursor-pointer w-2xs px-6 py-4 bg-[#FFA41C] hover:bg-[#f29b1a] text-[#0F1111] text-xl font-bold rounded-full"
+          >
             Check Price on Amazon
-          </Button>
+          </a>
         </div>
 
         <div>
@@ -156,6 +182,7 @@ export default function WhatPeople() {
               <p className="text-[#0F1111]">{data.textP}... </p>
               <a
                 href={data.link}
+                target="_blank"
                 className="text-blue-500 hover:underline decoration-wavy"
               >
                 See more

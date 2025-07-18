@@ -1,42 +1,42 @@
 const reviewsData = [
   {
     id: 0,
-    logoInit: "JM-1",
+    logoInit: "Zalii99",
     stars: "★★★★★",
     starsText: "Verified Purchase",
-    header: "Perfect for smaller rooms, efficient and pretty quiet.",
+    header: "Must buy if you suffer from indoor allergies!",
     subtext:
-      "Reviewed in the United States on June 14, 2025 Style: Core MiniColor: White",
+      "Reviewed in the United States on July 7, 2025",
     textP:
-      "Perfect for small spaces like guest rooms or home offices. Highest level is noticeable, but levels 1 and 2 work just as well with lesser noises (I think my ceiling fan makes more noise). Place it, plug it in, turn it on and set a level. Easy peasy. Push on/off and to",
-    link: "https://www.amazon.com/gp/customer-reviews/R2QER0Q8VBMOQO/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09GTRVJQM",
-    lastMessage: "11 people found this helpful",
+      "Amazing product! It has been helpful to manage my indoor allergies. It is super quiet and I love that it also removes the food smells that linger around the house. I like that the light turns off after a few minutes, which is great for nighttime use. The air filter is compact, easy to move and maintain, and it does an amazing job.",
+    link: "https://www.amazon.com/gp/customer-reviews/R1C4HECKI07NQM/ref=cm_cr_srp_d_rvw_ttl?ie=UTF8&ASIN=B09GTRVJQM",
+    lastMessage: "4 people found this helpful",
   },
   {
     id: 1,
-    logoInit: "JM-2",
+    logoInit: "Mercedes",
     stars: "★★★★★",
     starsText: "Verified Purchase",
-    header: "Perfect for smaller rooms, efficient and pretty quiet.",
+    header: "Great Air Purifier for Kids’ Room",
     subtext:
-      "Reviewed in the United States on June 14, 2025 Style: Core MiniColor: White",
+      "Reviewed in the United States on July 7, 2025",
     textP:
-      "Perfect for small spaces like guest rooms or home offices. Highest level is noticeable, but levels 1 and 2 work just as well with lesser noises (I think my ceiling fan makes more noise). Place it, plug it in, turn it on and set a level. Easy peasy. Push on/off and to",
-    link: "https://www.amazon.com/gp/customer-reviews/R2QER0Q8VBMOQO/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09GTRVJQM",
-    lastMessage: "11 people found this helpful",
+      "I bought this air purifier for my kids’ room and it works just fine! It’s quiet, easy to set up, and helps keep the air feeling fresh and clean. I’ve noticed less dust and my kids seem to be sleeping better too.",
+    link: "https://www.amazon.com/gp/customer-reviews/RFCFSSSBVMVOX/ref=cm_cr_srp_d_rvw_ttl?ie=UTF8&ASIN=B09GTRVJQM",
+    lastMessage: "13 people found this helpful",
   },
   {
     id: 2,
-    logoInit: "JM-3",
+    logoInit: "Jeremy",
     stars: "★★★★",
     starsText: "Verified Purchase",
-    header: "Perfect for smaller rooms, efficient and pretty quiet.",
+    header: " Great no frills air purifier for a small room.",
     subtext:
-      "Reviewed in the United States on June 14, 2025 Style: Core MiniColor: White",
+      "Reviewed in the United States on July 13, 2025",
     textP:
-      "Perfect for small spaces like guest rooms or home offices. Highest level is noticeable, but levels 1 and 2 work just as well with lesser noises (I think my ceiling fan makes more noise). Place it, plug it in, turn it on and set a level. Easy peasy. Push on/off and to",
-    link: "https://www.amazon.com/gp/customer-reviews/R2QER0Q8VBMOQO/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B09GTRVJQM",
-    lastMessage: "11 people found this helpful",
+      "Love this little air purifier use it in a bedroom and couldn't be happier with the design or quality of the product. At first I wasn't sure I could tell a difference in the air quality but I notice it does seem",
+    link: "https://www.amazon.com/gp/customer-reviews/R2HY097YEBQBM9/ref=cm_cr_srp_d_rvw_ttl?ie=UTF8&ASIN=B09GTRVJQM",
+    lastMessage: "2 people found this helpful",
   },
 ];
 

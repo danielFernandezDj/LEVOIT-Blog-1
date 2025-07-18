@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 import blogData from "@/lib/Blog-Data";
 
@@ -40,7 +41,17 @@ export default function BlogIndex() {
                 See more &gt;
               </Link>
             </div>
-            <div className="hidden md:block md:min-w-64 min-h-44 bg-[#F55700] rounded-lg" />
+            {/* <div className="hidden md:block md:min-w-64 min-h-44 bg-[#F55700] rounded-lg" /> */}
+            <a href={post.slug}>
+              <Image
+                src={post.image}
+                alt="Blog Image"
+                width={300}
+                height={240}
+                className="hidden md:block h-50 w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
+                unoptimized
+              />
+            </a>
           </div>
         ))}
       </main>
