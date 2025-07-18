@@ -4,10 +4,6 @@ import Link from "next/link";
 import blogData from "@/lib/Blog-Data";
 import Image from "next/image";
 
-// ! ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––|
-// ! I need to fix the image path for the blog images  &  the "see more" link. |
-// ! ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––|
-
 export default function BlogList() {
   return (
     <main className="bg-[#364558]">
