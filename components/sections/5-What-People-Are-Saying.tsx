@@ -69,13 +69,13 @@ export default function WhatPeople() {
           Reviews with videos
         </h2>
         <ScrollArea className="w-86 md:w-full h-auto whitespace-nowrap ">
-          <div className="flex gap-4 md:justify-center">
+          <div className="flex gap-4 lg:gap-6 md:justify-center">
             {videoData.map((data, index) => (
               <a
                 key={index}
                 target="_blank"
                 href={data.link}
-                className="border-2 border-[#364558] hover:border-2 hover:border-amber-500 flex flex-col justify-end p-2 w-35 h-55 rounded-lg"
+                className="border-2 border-[#364558] hover:border-2 hover:border-amber-500 flex flex-col justify-end p-2 w-35 h-55 lg:w-52 lg:h-72 rounded-lg"
               >
                 <Image
                   src={data.image}
