@@ -12,7 +12,8 @@ const blogData = [
   {
     id: 2,
     slug: "/blogs/posts/p-2",
-    title: "LEVOIT vs Other Air Purifiers: Honest Comparison",
+    title:
+      "Why the LEVOIT Core 400S Is the Best Bedroom Air Purifier for Families",
     image: "",
     summary: "We break down the differences in filtration, noise, and value.",
     tag: "Comparison",
