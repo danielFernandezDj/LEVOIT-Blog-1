@@ -61,7 +61,7 @@ export default function LevoitLargeBedroomBlog() {
         <div className="text-center">
           <Link href={productLink} target="_blank">
             <p className="inline-block bg-[#FFA41C] hover:bg-[#f29b1a] text-white font-bold text-lg px-6 py-3 rounded-full mb-5 transition cursor-pointer">
-              Now on Amazon – 20% Off!
+              Now on Amazon
             </p>
           </Link>
         </div>
@@ -204,7 +204,7 @@ export default function LevoitLargeBedroomBlog() {
 
           <div className="bg-[#F3F4F6] p-6 rounded-lg shadow-md text-center">
             <h3 className="text-xl font-bold mb-2">
-              Amazon Deal: 20% Off Right Now
+              Now on Amazon Deal
             </h3>
             <p className="text-lg mb-4">
               List Price: <s>$49.99</s> →{" "}
