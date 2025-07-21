@@ -33,16 +33,16 @@ export default function LevoitLargeBedroomBlog() {
     <div className="bg-white text-[#0F1111] font-sans">
       <Head>
         <title>
-          Why the LEVOIT Core 400S Is the Best Bedroom Air Purifier for Families
+          Best LEVOIT Air Purifier for Bedrooms: Core 300 vs Core 400S
         </title>
         <meta
           name="description"
-          content="Find out why the LEVOIT air purifier is the best choice for large bedrooms. Quiet, powerful, and now 20% off on Amazon."
+          content="Looking for the best LEVOIT air purifier for your bedroom? We tested and reviewed top models to help you choose the right one for your space."
         />
       </Head>
 
       <h1 className="text-3xl md:text-5xl font-bold text-center pt-10 md:pt-15">
-        Why the LEVOIT Core 400S Is the Best Bedroom Air Purifier for Families
+        Choosing the Best LEVOIT Air Purifier for Your Bedroom
       </h1>
 
       <div className="max-w-3xl mx-auto px-4 py-10">
@@ -67,44 +67,23 @@ export default function LevoitLargeBedroomBlog() {
 
         <section className="space-y-6">
           <p>
-            Over 1,152 verified customers have shared their experiences with the 
-            {" "}<a
-              href={productLink}
-              target="_blank"
-              className="font-semibold text-orange-600 hover:underline decoration-wavy"
-            >
-              LEVOIT Core 400S
-            </a>
-            , specifically mentioning how it effectively removes allergens like
-            pet dander, hair, and dust. For households with cats, dogs, or
-            allergy-sensitive family members, this purifier has become a daily
-            necessity — not just a luxury. The consistent praise highlights how
-            essential clean air has become in modern homes, especially bedrooms
-            where people spend most of their time resting and recovering.
-          </p>
-
-          <p>
-            Among those users, more than 1,080 left 4- and 5-star reviews.
-            Families are especially impressed by how quiet the Core 400S runs
-            overnight — often describing it as “barely noticeable” or “quieter
-            than a whisper.” This makes it ideal not just for adult bedrooms,
-            but also for nurseries, kids’ rooms, or anyone with light sleep. The
-            smart features like timers and sleep mode ensure that the air stays
-            fresh without interrupting anyone’s rest.
+            Looking for a quiet, powerful, and stylish air purifier for your
+            bedroom? LEVOIT offers multiple models, but which one is the best
+            fit for your space? In this guide, we compare the Core 300 and Core
+            400S, highlighting the strengths of each to help you make the right
+            choice.
           </p>
 
           {/* Why We Recommend */}
-          <h2 className="text-2xl mt-14 font-semibold">Why We Recommend It</h2>
+          <h2 className="text-2xl mt-14 font-semibold">
+            Core 400S: Top Pick for Larger Bedrooms It
+          </h2>
           <ul className="list-disc list-inside space-y-2">
-            <li>Designed specifically for bedrooms and larger spaces.</li>
-            <li>
-              Traps pet hair, dust, and allergens using HEPA H13 filtration.
-            </li>
-            <li>
-              App control and scheduling — perfect for families with routines.
-            </li>
-            <li>Extremely quiet — great for babies and light sleepers.</li>
-            <li>Currently available at a limited-time discount on Amazon.</li>
+            <li>Covers up to 403 sq ft, ideal for master bedrooms.</li>
+            <li>Whisper-quiet Sleep Mode with ambient light-off option.</li>
+            <li>Smart control via VeSync app and voice commands.</li>
+            <li>Advanced 3-stage filtration (HEPA H13 included).</li>
+            <li>Sleek, modern design that fits any room aesthetic.</li>
           </ul>
 
           <p>

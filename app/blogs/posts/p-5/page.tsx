@@ -32,17 +32,15 @@ export default function LevoitLargeBedroomBlog() {
   return (
     <div className="bg-white text-[#0F1111] font-sans">
       <Head>
-        <title>
-          Why the LEVOIT Core 400S Is the Best Bedroom Air Purifier for Families
-        </title>
+        <title>LEVOIT HEPA H13 Explained: Why It Matters for Clean Air</title>
         <meta
           name="description"
-          content="Find out why the LEVOIT air purifier is the best choice for large bedrooms. Quiet, powerful, and now 20% off on Amazon."
+          content="What is HEPA H13 and why does it matter? Discover the power behind LEVOIT’s filtration technology and how it helps remove allergens and airborne particles."
         />
       </Head>
 
       <h1 className="text-3xl md:text-5xl font-bold text-center pt-10 md:pt-15">
-        Why the LEVOIT Core 400S Is the Best Bedroom Air Purifier for Families
+        Why HEPA H13 Filtration Makes LEVOIT Air Purifiers Stand Out
       </h1>
 
       <div className="max-w-3xl mx-auto px-4 py-10">
@@ -67,44 +65,24 @@ export default function LevoitLargeBedroomBlog() {
 
         <section className="space-y-6">
           <p>
-            Over 1,152 verified customers have shared their experiences with the 
-            {" "}<a
-              href={productLink}
-              target="_blank"
-              className="font-semibold text-orange-600 hover:underline decoration-wavy"
-            >
-              LEVOIT Core 400S
-            </a>
-            , specifically mentioning how it effectively removes allergens like
-            pet dander, hair, and dust. For households with cats, dogs, or
-            allergy-sensitive family members, this purifier has become a daily
-            necessity — not just a luxury. The consistent praise highlights how
-            essential clean air has become in modern homes, especially bedrooms
-            where people spend most of their time resting and recovering.
-          </p>
-
-          <p>
-            Among those users, more than 1,080 left 4- and 5-star reviews.
-            Families are especially impressed by how quiet the Core 400S runs
-            overnight — often describing it as “barely noticeable” or “quieter
-            than a whisper.” This makes it ideal not just for adult bedrooms,
-            but also for nurseries, kids’ rooms, or anyone with light sleep. The
-            smart features like timers and sleep mode ensure that the air stays
-            fresh without interrupting anyone’s rest.
+            Not all filters are created equal. LEVOIT air purifiers with HEPA
+            H13 technology capture ultra-fine particles, making a real
+            difference in how clean your air feels. Learn what HEPA H13 means,
+            and why it’s a must-have for bedrooms and allergy-sensitive homes.
           </p>
 
           {/* Why We Recommend */}
-          <h2 className="text-2xl mt-14 font-semibold">Why We Recommend It</h2>
+          <h2 className="text-2xl mt-14 font-semibold">
+            Hospital-Grade Air Filtration for Your Home It
+          </h2>
           <ul className="list-disc list-inside space-y-2">
-            <li>Designed specifically for bedrooms and larger spaces.</li>
             <li>
-              Traps pet hair, dust, and allergens using HEPA H13 filtration.
+              Captures 99.97% of airborne particles as small as 0.1 microns.
             </li>
-            <li>
-              App control and scheduling — perfect for families with routines.
-            </li>
-            <li>Extremely quiet — great for babies and light sleepers.</li>
-            <li>Currently available at a limited-time discount on Amazon.</li>
+            <li>Removes allergens, pet dander, dust, smoke, mold spores.</li>
+            <li>Ideal for people with asthma or allergies.</li>
+            <li>Higher efficiency than standard HEPA filters.</li>
+            <li>Used in medical environments and now in your bedroom.</li>
           </ul>
 
           <p>
