@@ -47,7 +47,7 @@ export default function LevoitLargeBedroomBlog() {
         <div className="aspect-video mb-6">
           <iframe
             className="w-full h-full rounded"
-            src="https://www.youtube.com/embed/QSVqgQbxg98"
+            src="https://www.youtube.com/embed/-zxFjfRmAgc"
             title="LEVOIT AIR PURIFIER | Honest Review"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
