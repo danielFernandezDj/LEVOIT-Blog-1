@@ -158,11 +158,10 @@ export default function LevoitLargeBedroomBlog() {
           <h2 className="text-2xl mt-14 font-semibold">Product Specs & Deal</h2>
           <div className="bg-[#F3F4F6] p-6 rounded-lg shadow-md text-center">
             <h3 className="text-xl font-bold mb-2">
-              Amazon Deal: 20% Off Right Now
+              Amazon Deal Right Now
             </h3>
             <p className="text-lg mb-4">
-              List Price: <s>$49.99</s> →{" "}
-              <span className="text-[#F55700] font-bold">$39.97</span>
+              List Price: $49.99
             </p>
             <Link href={productLink} target="_blank">
               <p className="inline-block bg-[#FFA41C] hover:bg-[#f29b1a] text-white px-6 py-3 rounded-full font-semibold transition cursor-pointer">
@@ -207,8 +206,7 @@ export default function LevoitLargeBedroomBlog() {
               Now on Amazon Deal
             </h3>
             <p className="text-lg mb-4">
-              List Price: <s>$49.99</s> →{" "}
-              <span className="text-[#F55700] font-bold">$39.97</span>
+              List Price: $49.99
             </p>
             <Link href={productLink} target="_blank">
               <p className="inline-block bg-[#FFA41C] hover:bg-[#f29b1a] text-white px-6 py-3 rounded-full font-semibold transition cursor-pointer">

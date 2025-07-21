@@ -1,5 +1,3 @@
-"use client";
-
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,15 +32,17 @@ export default function LevoitLargeBedroomBlog() {
   return (
     <div className="bg-white text-[#0F1111] font-sans">
       <Head>
-        <title>LEVOIT Core 300S vs Other Air Purifiers: Which One Wins?</title>
+        <title>
+          Why the LEVOIT Core 400S Is the Best Bedroom Air Purifier for Families
+        </title>
         <meta
           name="description"
-          content="We compare the LEVOIT Core 300S with other top air purifiers on the market. Find out how it stacks up in price, performance, and filtration."
+          content="Find out why the LEVOIT air purifier is the best choice for large bedrooms. Quiet, powerful, and now 20% off on Amazon."
         />
       </Head>
 
       <h1 className="text-3xl md:text-5xl font-bold text-center pt-10 md:pt-15">
-        LEVOIT Core 300S vs. the Competition: A Clear Winner for Bedrooms
+        Why the LEVOIT Core 400S Is the Best Bedroom Air Purifier for Families
       </h1>
 
       <div className="max-w-3xl mx-auto px-4 py-10">
@@ -67,24 +67,54 @@ export default function LevoitLargeBedroomBlog() {
 
         <section className="space-y-6">
           <p>
-            Air purifiers are no longer a luxury — they’re a necessity. But with
-            so many brands out there, is the LEVOIT Core 300S truly the best
-            option for your home? We compared it side-by-side with other popular
-            models to uncover the truth. From filtration to noise levels and
-            smart features, here’s how it stacks up.
+            Over 1,152 verified customers have shared their experiences with the 
+            {" "}<a
+              href={productLink}
+              target="_blank"
+              className="font-semibold text-orange-600 hover:underline decoration-wavy"
+            >
+              LEVOIT Core 400S
+            </a>
+            , specifically mentioning how it effectively removes allergens like
+            pet dander, hair, and dust. For households with cats, dogs, or
+            allergy-sensitive family members, this purifier has become a daily
+            necessity — not just a luxury. The consistent praise highlights how
+            essential clean air has become in modern homes, especially bedrooms
+            where people spend most of their time resting and recovering.
+          </p>
+
+          <p>
+            Among those users, more than 1,080 left 4- and 5-star reviews.
+            Families are especially impressed by how quiet the Core 400S runs
+            overnight — often describing it as “barely noticeable” or “quieter
+            than a whisper.” This makes it ideal not just for adult bedrooms,
+            but also for nurseries, kids’ rooms, or anyone with light sleep. The
+            smart features like timers and sleep mode ensure that the air stays
+            fresh without interrupting anyone’s rest.
           </p>
 
           {/* Why We Recommend */}
-          <h2 className="text-2xl mt-14 font-semibold">
-            Why the LEVOIT Core 300S Stands Out
-          </h2>
+          <h2 className="text-2xl mt-14 font-semibold">Why We Recommend It</h2>
           <ul className="list-disc list-inside space-y-2">
-            <li>True HEPA H13 filter captures 99.97% of airborne particles.</li>
-            <li>Ultra-quiet Sleep Mode for undisturbed nights.</li>
-            <li>Smart app control with real-time air quality updates.</li>
-            <li>Affordable price for high-end features.</li>
-            <li>Compact yet powerful — perfect for bedrooms.</li>
+            <li>Designed specifically for bedrooms and larger spaces.</li>
+            <li>
+              Traps pet hair, dust, and allergens using HEPA H13 filtration.
+            </li>
+            <li>
+              App control and scheduling — perfect for families with routines.
+            </li>
+            <li>Extremely quiet — great for babies and light sleepers.</li>
+            <li>Currently available at a limited-time discount on Amazon.</li>
           </ul>
+
+          <p>
+            With over 60,000 global ratings and thousands of real-life
+            testimonials, the LEVOIT Core 400S has solidified its place as one
+            of Amazon’s top-rated air purifiers for bedrooms and allergy-prone
+            households. Its ability to handle large spaces, combined with its
+            sleek design and smart connectivity, makes it a standout choice for
+            those who want powerful purification without the bulky footprint.
+          </p>
 
           {/* Real User Reviews */}
           <h2 className="text-2xl mt-14 font-semibold">Real User Reviews</h2>
