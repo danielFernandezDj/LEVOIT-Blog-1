@@ -1,63 +1,58 @@
 "use client";
 
 import Link from "next/link";
-
-import BlogData from "@/lib/Blog-Data";
-
-// import Image from "next/image";
-import { Button } from "../ui/button";
-
-interface BlogItem {
-  id: number;
-  image: string;
-  title: string;
-  subTitle: string;
-  hashtags: string;
-  link: string;
-}
+import blogData from "@/lib/Blog-Data";
+import Image from "next/image";
 
 export default function BlogList() {
-  const blogData: BlogItem[] = BlogData();
-
   return (
-    <main className="bg-[#222F3E]">
-      <section className="flex flex-col justify-center items-center w-full gap-4 py-16">
-        <h2 className="text-3xl text-white font-bold mb-10">
-          <span className="text-[#F55700]">-</span> Our Top ️Blogs{" "}
-          <span className="text-[#F55700]">-</span>
+    <main className="bg-[#364558]">
+      <section className="flex flex-col justify-center items-center w-full gap-6 py-16">
+        <h2 className="text-3xl text-white font-bold mb-4">
+          <span className="text-[#f29b1a]">-</span> Our Top ️Blogs{" "}
+          <span className="text-[#f29b1a]">-</span>
         </h2>
-        {blogData.map((blog, index) => (
-          <div key={index} className="flex flex-col w-full gap-6 text-white">
-            <div className="flex justify-around md:justify-center md:gap-40 w-full px-2 text-white">
-              <div className="flex flex-col gap-1 w-3/5 md:w-auto">
-                <h3 className="text-xl font-bold mb-2">{blog.title}</h3>
-                <p className="max-w-5/6 text-[#CACACA]">{blog.subTitle}</p>
-                <p className="text-sm text-[#CACACA]">{blog.hashtags}</p>
-                <div>
-                  <Button className="hover:cursor-pointer mt-2 px-8 text-lg tracking-wider rounded-full text-white bg-[#FFA41C] hover:bg-[#f29b1a]">
-                    See more {">"}
-                  </Button>
-                </div>
+        <div className="max-w-2xl mx-auto px-4 space-y-10 pb-8">
+          {blogData.slice(0, 3).map((post) => (
+            <div
+              key={post.slug}
+              className="flex justify-between items-start gap-4 border-b border-gray-700 pb-6"
+            >
+              <div>
+                <h2 className="text-xl text-white font-semibold">
+                  {post.title}
+                </h2>
+                <p className="text-sm text-gray-300 mt-1">{post.summary}</p>
+                <p className="text-xs mt-2 text-gray-400">
+                  #{post.tag} • {post.date}
+                </p>
+                <Link
+                  href={post.slug}
+                  target="_blank"
+                  className="inline-block mt-3 bg-[#FFA41C] text-white text-sm font-bold tracking-wider py-2 px-4 rounded-full hover:bg-[#f29b1a] transition"
+                >
+                  See more &gt;
+                </Link>
               </div>
-
-              <div className="bg-amber-500 w-30 h-30 rounded-2xl">
-                {/* <Image
-              src="{blog.image}"
-              alt="Image"
-              fill
-              className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
-              /> */}
+              <div className="hidden md:block md:min-w-64 min-h-44 bg-[#FFA41C] rounded-lg">
+                <a href={post.slug} target="_blank">
+                  <Image
+                    src={post.image}
+                    alt="Image"
+                    width={300}
+                    height={240}
+                    className="h-50 w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
+                  />
+                </a>
               </div>
             </div>
-
-            <div className="bg-gray-500/50 w-4/5 pb-0.5 my-4 self-start md:self-center "></div>
-          </div>
-        ))}
+          ))}
+        </div>
         <Link
-          href=""
-          className="text-2xl py-4 text-white font-bold tracking-wide hover:tracking-widest transition-all duration-300 ease-in-out"
+          href="/blogs"
+          className="text-2xl text-white font-bold tracking-wide hover:tracking-widest transition-all duration-300 ease-in-out"
         >
-          See more <span className="text-[#F55700]">{">"}</span>{" "}
+          See more <span className="text-[#f29b1a]">{">"}</span>{" "}
         </Link>
       </section>
       ;
