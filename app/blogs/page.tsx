@@ -28,7 +28,7 @@ export default function BlogIndex() {
             key={post.slug}
             className="flex justify-between items-start gap-4 border-b border-gray-700 pb-6"
           >
-            <div>
+            <div className="flex-1">
               <h2 className="text-xl font-semibold">{post.title}</h2>
               <p className="text-sm text-gray-800 mt-1">{post.summary}</p>
               <p className="text-xs mt-2 text-gray-800">
